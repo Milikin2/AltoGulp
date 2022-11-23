@@ -1,0 +1,202 @@
+.calendar {
+    background-color: #f7f7f7;
+
+    &__body {
+        padding-top: 24px;
+        padding-bottom: 72px;
+    }
+
+    &__intro {
+        margin-top: 28px;
+    }
+
+    &__img {
+        margin-top: 24px;
+    }
+
+    &__influence {
+        margin-top: 24px;
+    }
+
+    &__instruction {
+        margin-top: 24px;
+    }
+
+    &__recomendations {
+        margin-top: 24px;
+    }
+}
+
+.calendar__intro {
+    &-title {
+        margin-bottom: 28px;
+    }
+
+    &-card {
+        background-color: #fff;
+        padding: 12px 112px 0 48px;
+        display: flex;
+        align-items: center;
+        border-radius: 12px;
+        justify-content: space-between;
+        position: relative;
+        z-index: 10;
+        overflow: hidden;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 800px;
+            height: 800px;
+            border-radius: 50%;
+            background-color: rgba(0, 170, 46, 0.1);
+            right: -230px;
+            top: -65px;
+            z-index: -1;
+        }
+    }
+
+    &-descr {
+        max-width: 505px;
+        font-size: 20px;
+        color: var(--dark-color);
+    }
+}
+
+.calendar__img {
+    background-color: #fff;
+    padding: 48px 185px;
+    border-radius: 12px;
+
+    &-container {
+        width: 758px;
+        height: 1072px;
+        margin-bottom: 48px;
+
+        img {
+            object-fit: contain;
+        }
+    }
+
+    &-download {
+        text-align: center;
+        display: block;
+        max-width: 264px;
+        margin: 0 auto;
+        background-color: var(--success-color);
+        color: #fff;
+        border-radius: 8px;
+        padding: 20px 8px;
+        outline: 1px solid var(--success-color);
+        transition: all 0.3s ease 0s;
+        font-size: 16px;
+
+        @media (any-hover: hover) {
+            &:hover {
+                transition: all 0.3s ease 0s;
+                color: var(--success-color);
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+.calendar__influence {
+    padding: 28px 28px 48px 28px;
+    background-color: #fff;
+    border-radius: 12px;
+
+    &-title {
+        padding-bottom: 28px;
+        border-bottom: 1px solid var(--muted-color);
+    }
+
+    &-descr {
+        margin-top: 28px;
+        max-width: 785px;
+        font-size: 16px;
+        color: var(--dark-color);
+    }
+
+    &-part {
+        &:not(:last-child) {
+            margin-bottom: 23px;
+        }
+    }
+
+    &-list {
+        padding-left: 25px;
+
+        li {
+            list-style-type: disc;
+        }
+    }
+}
+
+.calendar__instruction {
+    padding: 28px 28px 48px 28px;
+    background-color: #fff;
+    border-radius: 12px;
+
+    &-title {
+        padding-bottom: 28px;
+        border-bottom: 1px solid var(--muted-color);
+    }
+
+    &-descr {
+        margin-top: 28px;
+        max-width: 785px;
+        font-size: 16px;
+        color: var(--dark-color);
+    }
+
+    &-part {
+        &:not(:last-child) {
+            margin-bottom: 23px;
+        }
+    }
+
+    &-list {
+        padding-left: 25px;
+
+        li {
+            list-style-type: disc;
+        }
+    }
+}
+
+.calendar__recomendations {
+    padding: 28px 28px 48px 28px;
+    background-color: #fff;
+    border-radius: 12px;
+
+    &-title {
+        padding-bottom: 28px;
+        border-bottom: 1px solid var(--muted-color);
+    }
+
+    &-descr {
+        margin-top: 28px;
+        max-width: 785px;
+        font-size: 16px;
+        color: var(--dark-color);
+    }
+
+    &-part {
+        &:not(:last-child) {
+            margin-bottom: 23px;
+        }
+    }
+
+    &-list {
+        padding-left: 25px;
+
+        &:not(:last-child) {
+            margin-bottom: 26px;
+        }
+
+        li {
+            list-style-type: disc;
+        }
+    }
+}

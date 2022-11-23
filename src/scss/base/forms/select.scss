@@ -1,0 +1,174 @@
+// <SELECT>
+// Снипет (HTML): sel
+.pseudo__placeholder {
+	position: absolute;
+	top: 3px;
+	left: 1px;
+	flex: 1 1 auto;
+	border-radius: 8px;
+	font-size: 16px;
+	color: var(--muted-color);
+	padding: 10px 20px 10px 40px;
+	pointer-events: none;
+	touch-action: none;
+}
+
+.select__item-choosen .pseudo__placeholder {
+	display: none;
+}
+
+.select {
+	position: relative;
+
+	// .select__body
+	&__body {
+		position: relative;
+	}
+
+	// .select__title
+	&__title {
+		color: inherit;
+		text-align: left;
+		// border: 1px solid #d9d9d9;
+		background-color: #fff;
+		cursor: pointer;
+		width: 100%;
+		border-radius: 4px;
+	}
+
+	// .select__value
+	&__value {
+
+		>* {
+			flex: 1 1 auto;
+		}
+
+		&:after {
+			content: "";
+			align-self: stretch;
+			flex: 0 0 10px;
+			transition: all 0.3s ease 0s;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			._select-open & {
+				transform: rotate(-180deg);
+			}
+		}
+
+		&._select-pseudo-label {
+			&::before {
+				content: attr(data-pseudo-label);
+				opacity: 0.5;
+			}
+		}
+	}
+
+	// .select__text
+	&__text {
+		flex: 1 1 auto;
+	}
+
+	&__input {
+		width: 100%;
+		background-color: transparent;
+		height: 100%;
+	}
+
+	// .select__options
+	&__options {
+		position: absolute;
+		left: 0;
+		top: 45px;
+		background-color: #fff;
+		box-shadow: 0px 4px 20px rgb(34 34 34 / 15%);
+		border-radius: 12px;
+		width: 100%;
+		max-height: 303px;
+		overflow-y: auto;
+
+		&::-webkit-scrollbar {
+			width: 4px;
+			height: 64px;
+		}
+
+		&::-webkit-scrollbar-track {
+			background: #fff;
+			border-radius: 50%;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: var(--success-color);
+			border-radius: 0px 5px 5px 0px;
+			transform: matrix(-1, 0, 0, 1, 0, 0);
+		}
+	}
+
+	// .select__scroll
+	&__scroll {
+		overflow-y: auto;
+		overflow-x: hidden;
+		// Максимальная высота
+		max-height: 200px;
+
+		// Стили скроллбара
+		.simplebar-scrollbar {
+			&::before {
+				//opacity: 1;
+			}
+		}
+	}
+
+	// .select__option
+	&__option {
+		width: 100%;
+		text-align: left;
+		cursor: pointer;
+		// padding: 5px 15px;
+		color: inherit;
+		font-size: 18px;
+		color: var(--dark-color);
+		cursor: pointer;
+		transition: all 0.3s ease 0s;
+		padding: 8px 44px;
+		transition: all 0.3s ease 0s;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: rgba(0, 170, 46, 0.1);
+				transition: all 0.3s ease 0s;
+			}
+		}
+	}
+
+	// Конструкция дополнительных данных
+	&__row {
+		display: inline-flex;
+		align-items: center;
+	}
+
+	&__asset {}
+
+	&__text {}
+
+	// Состояния селекта
+	&._select-open {
+		// z-index: 5;
+	}
+
+	&._select-disabled {}
+
+	&._select-active {}
+
+	&._select-focus {}
+
+	&._select-multiple {}
+
+	&._select-checkbox {}
+}
+
+// Тег
+._select-tag {
+	cursor: pointer;
+}

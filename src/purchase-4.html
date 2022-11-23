@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Заказ 4"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page page-purchase">
+            <section class="section-purchase purchase">
+                <div class="purchase__container _container">
+                    <div class="purchase-body purchase-success-body">
+                        <div class="purchase-body__column-left">
+                            <div class="purchase-body__box">
+                                <div class="heading-body">
+                                    <h2 class="heading">Ваш заказ успешно оформлен</h2>
+                                </div>
+                                <div class="order-number_container">
+                                    <span class="order-number">№ заказа: 187893 </span>
+                                    <a href="/" class="tomain-link">На главную</a>
+                                </div>
+                                <p>
+                                    <span class="purchase-body__bold">На указанный Вами e-mail отправлено письмо с
+                                        информацией о заказе.</span> <br>
+                                    Пожалуйста проверьте электронную почту. Возможно, наше письмо попало в папку “Спам”.
+                                </p>
+                                <p>
+                                    Если Вы внезапно передумали или у Вас остались какие-то вопросы - напишите или
+                                    позвоните нам, даже если Вы
+                                    хотите просто удостовериться, что мы получили Ваш заказ!
+                                </p>
+                                <p>Мы обработаем заказ и отправим его в работу в течение 24 часов.</p>
+                                <p>С уважением, cлужба поддержки Dzagi Grow.</p>
+                                <a href="#" class="purchase-body__buy">Оплатить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="sign-in-modal modal-style" style="display: none">
+                <div class="sign-in-modal__wrapper modal-style__wrapper">
+                    <div class="modal-style__title title-24">Вход в личный кабинет</div>
+                    <form action="#" class="form">
+                        <label class="form__label">
+                            <span class="form__span text-16">Логин</span>
+                            <input class="form__input" type="text">
+                        </label>
+                        <label class="form__label">
+                            <span class="form__span text-16">Пароль</span>
+                            <input class="form__input" type="password">
+                        </label>
+                        <div class="form__password-settings">
+                            <label class="form__checkbox label">
+                                <input type="checkbox" checked="">
+                                <span class="form__checkbox-span label__span text-14">Запомнить пароль</span>
+                            </label>
+                            <button class="btn-success-transparent text-14">Забыли пароль</button>
+                        </div>
+                        <button type="submit" class="form__btn-sing-in btn-big-success">Войти</button>
+                        <button class="form__btn-register btn-big-success-outline">Зарегистрироваться</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="sign-up-modal modal-style" style="display: none">
+                <div class="sign-up-modal__wrapper modal-style__wrapper">
+                    <div class="modal-style__title title-24">Регистрация</div>
+                    <form action="#" class="form">
+                        <label class="form__label">
+                            <span class="form__span text-16">Логин<span class="form__label-star">*</span></span>
+                            <input class="form__input" type="text">
+                        </label>
+                        <label class="form__label">
+                            <span class="form__span text-16">Email<span class="form__label-star">*</span></span>
+                            <input class="form__input" type="email">
+                        </label>
+                        <label class="form__label">
+                            <span class="form__span text-16">Пароль<span class="form__label-star">*</span></span>
+                            <input class="form__input" type="password">
+                        </label>
+                        <label class="form__label">
+                            <span class="form__span text-16">Повторить пароль<span
+                                    class="form__label-star">*</span></span>
+                            <input class="form__input" type="password">
+                        </label>
+                        <div class="form__captcha">
+                            <label class="form__label">
+                                <span class="form__span text-16">Введите символы с изображения</span>
+                                <input class="form__input" type="password">
+                            </label>
+                            <div class="form__captcha-img">
+                                <img src="../img/captcha.png?_v=1667981078418" alt="">
+                            </div>
+                            <label class="form__checkbox label">
+                                <input type="checkbox" checked="">
+                                <span class="form__checkbox-span label__span text-14">Заполняя форму, Вы принимаете <a
+                                        class="form__agreement" href="#">пользовательское соглашение</a></span>
+                            </label>
+                        </div>
+                        <button type="submit" class="form__btn-sing-in btn-big-success">Зарегистрироваться</button>
+                        <button class="form__btn-register btn-big-success-outline">Войти</button>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

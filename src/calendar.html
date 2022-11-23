@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page calendar">
+            <div class="calendar__container _container">
+                <div class="calendar__body">
+                    <section class="breadcrumbs">
+                        <div class="_container">
+                            <ul class="breadcrumbs__list">
+                                <li class="breadcrumbs__item"><a href="/"
+                                        class="breadcrumbs__link text-success text-medium">DzagiGrow</a>
+                                </li>
+                                <li class="breadcrumbs__item text-muted text-medium">Календарь ситифермера</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="calendar__intro intro">
+                        <h3 class="calendar__intro-title title-24">Лунный календарь садовода 2023</h3>
+                        <div class="calendar__intro-card">
+                            <p class="calendar__intro-descr">
+                                С лунным календарем садовода на 2023 год от экспертов DzagiGrow вы сможете определить
+                                благоприятные дни ухода за вашими
+                                растениями и получить максимальный урожай.
+                            </p>
+                            <img src="@img/calendar/man.png" alt="" class="calendar__intro-img">
+                        </div>
+                    </section>
+
+                    <section class="calendar__img img">
+                        <div class="calendar__img-container">
+                            <img src="@img/calendar/calendar.png" alt="" class="calendar__img-img">
+                        </div>
+
+                        <a class="calendar__img-download" href="#">Скачать в формате pdf</a>
+                    </section>
+
+                    <section class="calendar__influence influence">
+                        <h3 class="calendar__influence-title title-20">Как луна влияет на выращивание?</h3>
+                        <div class="calendar__influence-descr">
+                            <p class="calendar__influence-part">Для начала разберемся с терминами. По аналогии с
+                                привычными всем нам солнечными сутками существует такое понятие, как
+                                лунные сутки. Это период между двумя ближайшими восходами луны. Однако, существует одно
+                                интересное отличие: первый и
+                                последний день лунного месяца обычно длятся пару минут.
+                            </p>
+                            <p class="calendar__influence-part">Как известно, гравитационное поле луны, из-за её
+                                близкого нахождения к земле, влияет на приливы и отливы. Растения
+                                состоят, в основном, из жидкости и влияние луны становится более очевидным. В момент
+                                нахождения луны на максимально
+                                близком расстоянии к земле, соки растений перемещаются от корней к верхушке под
+                                действием гравитации. При отдалении
+                                луны, соки растения возвращаются от верхушки к корневой системе.
+                            </p>
+                            <p class="calendar__influence-part">Фазы луны влияют на манипуляции, которые нужно проводить
+                                с растениями:</p>
+                            <ul class="calendar__influence-list">
+                                <li class="calendar__influence-item">Растущая луна. Подкормка.
+                                </li>
+                                <li class="calendar__influence-item">Убывающая луна. Подрезка.
+                                </li>
+                                <li class="calendar__influence-item">Новолуние. Нежелательна посадка и пересадка.
+                                </li>
+                                <li class="calendar__influence-item">Полнолуние. Удачное время для борьбы с вредителями.
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="calendar__instruction instruction">
+                        <h3 class="calendar__instruction-title title-20">Как пользоваться лунным календарём?</h3>
+                        <div class="calendar__instruction-descr">
+                            <p class="calendar__instruction-part">В лунном календаре садовода-огородника подробно
+                                расписаны благоприятные и неблагоприятные дни для проведения манипуляций
+                                с растениями, таких как: подкормка, обрезка, пересадка и полив. Для вашего удобства дни
+                                отмечены разными цветами и
+                                условными обозначениями, которые расшифрованы под самим календарём.
+                            </p>
+                            <p class="calendar__instruction-part">Примечание составителя лунного календаря для растений:
+                                «Календарь создавался с учетом фаз луны и плодородности знаков
+                                зодиака. Следование календарю обязательно даст свои плоды, но также необходимо
+                                ориентироваться на общее состояние
+                                растения. Удачи вам!».
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="calendar__recomendations recomendations">
+                        <h3 class="calendar__recomendations-title title-20">Рекомендации</h3>
+                        <div class="calendar__recomendations-descr">
+                            <ul class="calendar__recomendations-list">
+                                <li class="calendar__recomendations-item">Не пересаживайте цветущее растение;</li>
+                                <li class="calendar__recomendations-item">Соблюдайте требования для каждого растения:
+                                    количество света, субстрат, дренаж, особенность полива и тп.
+                                </li>
+                            </ul>
+                            <p class="calendar__recomendations-part">Желаем больших урожаев!</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

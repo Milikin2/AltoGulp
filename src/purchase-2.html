@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Заказ 2"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page purchase">
+            <section class="section-purchase purchase">
+                <div class="purchase__container _container">
+                    <div class="purchase-body">
+                        <div class="purchase-body__column-left">
+                            <div class="purchase-body__box purchase-body__box-select">
+                                <div class="heading-body">
+                                    <h2 class="heading">Регион доставки <span class="green">*</span></h2>
+                                </div>
+                                <p class="description-text">Населённый пункт (например: Пермь, Пермский край, Россия)
+                                </p>
+                                <div class="search-input__wrap">
+                                    <input type="search" placeholder="Пермь, Пермский край, Россия">
+                                    <span class="icon">
+                                        <img src="img/icons/search-outline.svg?_v=1667981078418" alt="">
+                                    </span>
+                                    <span class="description">Выберите свой город в списке. Если вы не нашли свой город,
+                                        выберите "другое
+                                        местоположение", а город впишите в поле "Город"
+                                    </span>
+                                    <div class="search-input__select">
+                                        <ul class="search-input__list">
+                                            <li class="search-input__item">Пермь, Пермский край, Россия</li>
+                                            <li class="search-input__item">Пермь, Пермский край, Россия</li>
+                                            <li class="search-input__item">Пермь, Пермский край, Россия</li>
+                                            <li class="search-input__item">Пермь, Пермский край, Россия</li>
+                                            <li class="search-input__item">Пермь, Пермский край, Россия</li>
+                                            <li class="search-input__item">Пермь, Пермский край, Россия</li>
+                                            <li class="search-input__item">Пермь, Пермский край, Россия</li>
+                                            <li class="search-input__item">Пермь, Пермский край, Россия</li>
+                                            <li class="search-input__item">Пермь, Пермский край, Россия</li>
+                                            <li class="search-input__item">Пермь, Пермский край, Россия</li>
+                                            <li class="search-input__item">Пермь, Пермский край, Россия</li>
+                                            <li class="search-input__item">Пермь, Пермский край, Россия</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="purchase-body__box">
+                                <div class="heading-body">
+                                    <h2 class="heading">Доставка<span class="green">*</span></h2>
+                                </div>
+                                <p class="description-text">Выберите тип оплаты</p>
+                                <div class="delivery__tabs">
+                                    <ul class="tabs clearfix" data-tabgroup="delivery-tabs">
+                                        <li><a href="#tab1" class="active">Оплата при получении</a></li>
+                                        <li><a href="#tab2">Предоплата</a></li>
+                                    </ul>
+                                    <div id="delivery-tabs" class="tabgroup">
+                                        <div class="tabgroup__body" id="tab1">
+                                            <div class="deliveries__item">
+                                                <h3 class="heading">Курьером до двери</h3>
+                                                <input type="checkbox" id="deliveryCompany-01">
+                                                <label for="deliveryCompany-01">
+                                                    <div class="label-content">
+                                                        <div class="img-convert">
+                                                            <img src="img/cdek_market.svg?_v=1667981078418" alt="">
+                                                        </div>
+                                                        <h4 class="title">СДЭК</h4>
+                                                        <span class="days">≈ 5-7 дней</span>
+                                                        <span class="price">444 ₽</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="deliveries__item">
+                                                <h3 class="heading">Доставка до терминала</h3>
+                                                <input type="checkbox" id="deliveryCompany-02">
+                                                <label for="deliveryCompany-02">
+                                                    <div class="label-content">
+                                                        <div class="img-convert">
+                                                            <img src="img/cdek_market.svg?_v=1667981078418" alt="">
+                                                        </div>
+                                                        <h4 class="title">СДЭК</h4>
+                                                        <span class="days">≈ 5-7 дней</span>
+                                                        <span class="price">444 ₽</span>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="purchase-body__box">
+                                <div class="heading-body">
+                                    <h2 class="heading">Использование бонусов</h2>
+                                </div>
+                                <p class="description-text">Обозначьте количество бонусов, которые Вы хотите списать при
+                                    оформлении заказа</p>
+                                <div class="purchase__bonus">
+                                    <span class="title">Количество бонусов на счету:</span>
+                                    <div class="bonus-limit">200 000</div>
+                                    <form action="#" class="purchase__bonus-form">
+                                        <input type="number" value="200" placeholder="200"
+                                            class="input purchase__bonus-input">
+                                        <input type="submit" class="btn-big-success purchase__bonus-button"
+                                            value="Списать">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="purchase-body__box">
+                                <div class="heading-body">
+                                    <h2 class="heading">Контактные данные <span class="green">*</span></h2>
+                                </div>
+                                <p class="description-text">Обозначьте количество бонусов, которые Вы хотите списать при
+                                    оформлении заказа</p>
+                                <div class="purchase__ucontacts">
+                                    <form action="#">
+                                        <div class="purchase__ucontacts-row">
+                                            <div class="purchase__ucontacts-col3">
+                                                <span class="title">Фамилия<span class="green">*</span></span>
+                                                <input type="text">
+                                            </div>
+                                            <div class="purchase__ucontacts-col3">
+                                                <span class="title">Имя<span class="green">*</span></span>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="purchase__ucontacts-row">
+                                            <div class="purchase__ucontacts-col2">
+                                                <span class="title">Телефон<span class="green">*</span></span>
+                                                <input type="phone">
+                                            </div>
+                                            <div class="purchase__ucontacts-col2">
+                                                <span class="title">Email<span class="green">*</span></span>
+                                                <input type="Email">
+                                            </div>
+                                            <div class="purchase__ucontacts-col checkmark-push-body">
+                                                <input type="checkbox" id="checkmark-push-sms">
+                                                <label for="checkmark-push-sms" class="checkmark-push">Включить
+                                                    СМС-уведомления о заказе</label>
+                                            </div>
+                                        </div>
+                                        <div class="purchase__ucontacts-row">
+                                            <div class="purchase__ucontacts-col6">
+                                                <span class="title">Адрес<span class="green">*</span></span>
+                                                <input type="text">
+                                            </div>
+                                            <div class="purchase__ucontacts-col1">
+                                                <span class="title">Индекс<span class="green">*</span></span>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="heading-body">
+                                            <h2 class="heading">Комментарии к заказу</h2>
+                                        </div>
+                                        <p class="text-16">
+                                            Что ещё нам необходимо учесть при доставке заказа?
+                                        </p>
+                                        <div class="purchase__ucontacts-row">
+                                            <div class="purchase__ucontacts-col">
+                                                <textarea name=""></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-description"><span class="green">*</span> Обязательное поле
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="purchase-body__footer">
+                                <button class="btn-big-success" value="Оформить заказ">Оформить заказ</button>
+                            </div>
+                        </div>
+                        <div class="purchase-body__column-right">
+                            <div class="order__table">
+                                <h3 class="order__table-title">Ваш заказ</h3>
+                                <div class="order__table-list">
+                                    <div class="item">
+                                        <span class="title">Количество товаров:</span>
+                                        <span class="number green">2 шт.</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="title">На сумму:</span>
+                                        <span class="number green">64 686 ₽</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="title">Общий вес:</span>
+                                        <span class="number green">109.237 кг</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="title">Скидка:</span>
+                                        <span class="number green">2 887 ₽</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="title">Бонусы:</span>
+                                        <span class="number green">+26 195</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="title">Доставка:</span>
+                                        <span class="number green">-</span>
+                                    </div>
+                                    <div class="item sum">
+                                        <span class="title">Итого:</span>
+                                        <span class="number green">61 799 ₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="sign-in-modal modal-style" style="display: none">
+                <div class="sign-in-modal__wrapper modal-style__wrapper">
+                    <div class="modal-style__title title-24">Вход в личный кабинет</div>
+                    <form action="#" class="form">
+                        <label class="form__label">
+                            <span class="form__span text-16">Логин</span>
+                            <input class="form__input" type="text">
+                        </label>
+                        <label class="form__label">
+                            <span class="form__span text-16">Пароль</span>
+                            <input class="form__input" type="password">
+                        </label>
+                        <div class="form__password-settings">
+                            <label class="form__checkbox label">
+                                <input type="checkbox" checked="">
+                                <span class="form__checkbox-span label__span text-14">Запомнить пароль</span>
+                            </label>
+                            <button class="btn-success-transparent text-14">Забыли пароль</button>
+                        </div>
+                        <button type="submit" class="form__btn-sing-in btn-big-success">Войти</button>
+                        <button class="form__btn-register btn-big-success-outline">Зарегистрироваться</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="sign-up-modal modal-style" style="display: none">
+                <div class="sign-up-modal__wrapper modal-style__wrapper">
+                    <div class="modal-style__title title-24">Регистрация</div>
+                    <form action="#" class="form">
+                        <label class="form__label">
+                            <span class="form__span text-16">Логин<span class="form__label-star">*</span></span>
+                            <input class="form__input" type="text">
+                        </label>
+                        <label class="form__label">
+                            <span class="form__span text-16">Email<span class="form__label-star">*</span></span>
+                            <input class="form__input" type="email">
+                        </label>
+                        <label class="form__label">
+                            <span class="form__span text-16">Пароль<span class="form__label-star">*</span></span>
+                            <input class="form__input" type="password">
+                        </label>
+                        <label class="form__label">
+                            <span class="form__span text-16">Повторить пароль<span
+                                    class="form__label-star">*</span></span>
+                            <input class="form__input" type="password">
+                        </label>
+                        <div class="form__captcha">
+                            <label class="form__label">
+                                <span class="form__span text-16">Введите символы с изображения</span>
+                                <input class="form__input" type="password">
+                            </label>
+                            <div class="form__captcha-img">
+                                <img src="../img/captcha.png?_v=1667981078418" alt="">
+                            </div>
+                            <label class="form__checkbox label">
+                                <input type="checkbox" checked="">
+                                <span class="form__checkbox-span label__span text-14">Заполняя форму, Вы принимаете <a
+                                        class="form__agreement" href="#">пользовательское соглашение</a></span>
+                            </label>
+                        </div>
+                        <button type="submit" class="form__btn-sing-in btn-big-success">Зарегистрироваться</button>
+                        <button class="form__btn-register btn-big-success-outline">Войти</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

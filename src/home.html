@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page book">
+			<div class="book__container">
+				<div class="book__body">
+					<section class="breadcrumbs">
+						<div class="_container">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__item"><a href="/"
+										class="breadcrumbs__link text-success text-medium">DzagiGrow</a>
+								</li>
+								<li class="breadcrumbs__item text-muted text-medium">Книга “Сам вырастил!”</li>
+							</ul>
+						</div>
+					</section>
+					<section class="book__section section-book">
+						<h3 class="book__title title-24">«Книга «Сам вырастил!» Геннадий Синичкин»</h3>
+						<div class="section-book__content">
+							<div class="section-book__descr-container">
+								<h3 class="section-book__descr-title">Оглавление</h3>
+								<ol class="section-book__list">
+									<h3 class="section-book__list-title">Глава 1. Физиология растения</h3>
+									<li class="section-book__list-item">Слово автора</li>
+									<li class="section-book__list-item">Теория: то, что должен знать каждый
+									</li>
+									<li class="section-book__list-item">Фотосинтез</li>
+									<li class="section-book__list-item">Фотопериодизм</li>
+									<li class="section-book__list-item">Половая жизнь растений</li>
+									<li class="section-book__list-item">Взаимодействие растения с
+										окружающей средой</li>
+									<li class="section-book__list-item">Идеальные условия</li>
+
+									<h3 class="section-book__list-title">Глава 2. Как оборудовать рабочее помещение
+									</h3>
+									<li class="section-book__list-item">Выбор помещения и метода
+										выращивания</li>
+									<li class="section-book__list-item">Возможнные сложности, которые надо
+										предвидеть заранее</li>
+									<li class="section-book__list-item">Идеальное рабочее помещение</li>
+									<li class="section-book__list-item">Список покупок</li>
+									<li class="section-book__list-item">Советы вперемешку</li>
+									<li class="section-book__list-item">Паутинный клещ</li>
+
+									<h3 class="section-book__list-title">Глава 3. Дневник культивирования</h3>
+									<li class="section-book__list-item">Выбор растения</li>
+									<li class="section-book__list-item">Проращивание семян</li>
+									<li class="section-book__list-item">Укоренение отводков</li>
+									<li class="section-book__list-item">Период вегетативного роста</li>
+									<li class="section-book__list-item">Период подготовки растения к
+										цветению</li>
+									<li class="section-book__list-item">Цветение</li>
+									<li class="section-book__list-item">Период созревания</li>
+									<li class="section-book__list-item">Сбор урожая и сушка</li>
+									<li class="section-book__list-item">Заключение</li>
+								</ol>
+							</div>
+							<div class="section-book__img-container">
+								<img src="@img/books/section-book__img.png" alt="">
+
+								<div class="section-book__img-links">
+									<a class="section-book__buy" href="#">Купить книгу</a>
+									<a class="section-book__read" href="#">Читать онлайн</a>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
